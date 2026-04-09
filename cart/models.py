@@ -7,7 +7,11 @@ class CartItem(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='cart_items', verbose_name='Товар')
     quantity = models.PositiveIntegerField(default=1, verbose_name='Количество')
 
-def __str__(self):
-    return f'{self.user.username}: {self.product.name} = {self.quantity}'
+    class Meta:
+        verbose_name = 'Корзина'
+        verbose_name_plural = 'Корзины'
+
+    def __str__(self):
+        return f'{self.user.username}: {self.product.name} = {self.quantity}'
 
 
