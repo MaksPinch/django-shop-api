@@ -18,3 +18,4 @@ class SubcategoryAdmin(admin.ModelAdmin):
 class ProductAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'slug', 'price', 'image', 'subcategory')
     prepopulated_fields = {'slug': ('name',)}
+
