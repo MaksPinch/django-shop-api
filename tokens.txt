@@ -1,2 +1,0 @@
-username: maks
-token: "aa14bc3056221c7c25137128021350b15f3a75cf"
