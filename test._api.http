@@ -11,3 +11,30 @@ Content-Type: application/json
     "username": "maks",
     "password": "maksim13000"
 }
+
+
+###
+
+GET http://localhost:8000/api/cart
+Authorization: Token ...
+
+
+###
+POST http://localhost:8000/api/cart/
+Authorization: Token ...
+Content-Type: application/json
+
+{
+    "product_id": 1,
+    "quantity": 3
+}
+
+###
+DELETE http://localhost:8000/api/cart/
+Authorization: Token ...
+Content-Type: application/json
+
+{
+    "product_id": 1,
+    "quantity": 4
+}

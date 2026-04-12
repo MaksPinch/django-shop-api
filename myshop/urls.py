@@ -23,7 +23,9 @@ from rest_framework.authtoken import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('catalog.urls')),
+    path('api/', include('cart.urls')),
     path('api-token-auth', views.obtain_auth_token),
+
 ]
 
 if settings.DEBUG:
