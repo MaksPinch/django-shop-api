@@ -38,3 +38,6 @@ Content-Type: application/json
     "product_id": 1,
     "quantity": 4
 }
+
+###
+GET http://localhost:8000/api/schema/

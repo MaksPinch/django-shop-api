@@ -1,0 +1,108 @@
+[
+{
+  "model": "catalog.category",
+  "pk": 1,
+  "fields": {
+    "name": "Продукты",
+    "slug": "produkty",
+    "image": "categories/products_JED1uhv.jpeg"
+  }
+},
+{
+  "model": "catalog.subcategory",
+  "pk": 1,
+  "fields": {
+    "name": "Молочные продукты",
+    "slug": "molochnye-produkty",
+    "image": "subcategories/dairy_XR4zjUY.jpg",
+    "category": 1
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 1,
+  "fields": {
+    "name": "Кефир 1%",
+    "slug": "kefir-1",
+    "price": "99.00",
+    "image": "products/kefir-1_Yfle4nl.jpg",
+    "subcategory": 1
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 2,
+  "fields": {
+    "name": "Молоко 3.2%",
+    "slug": "moloko-32",
+    "price": "175.00",
+    "image": "products/milk_s88LQPq.png",
+    "subcategory": 1
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 3,
+  "fields": {
+    "name": "Творог 9%",
+    "slug": "tvorog-9",
+    "price": "200.00",
+    "image": "products/cottage_cheese_JVqv0jh.jpg",
+    "subcategory": 1
+  }
+},
+{
+  "model": "cart.cartitem",
+  "pk": 1,
+  "fields": {
+    "user": 2,
+    "product": 1,
+    "quantity": 1
+  }
+},
+{
+  "model": "cart.cartitem",
+  "pk": 2,
+  "fields": {
+    "user": 2,
+    "product": 3,
+    "quantity": 3
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$epzaJ7dCa8h1AUpiGu31Bo$IaVnmH1tWCqklhPOUCep6BnIWXGHTAjXnQ0pWskE2fc=",
+    "last_login": "2026-04-13T18:18:26.317Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-04-13T18:18:01.307Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$iefkaMAhjFt0fHR0aAV9l9$CfZt1pLdHd8sNi4xyubuXFG99mq9suy0/p+l35Aj2XQ=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "maksim",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-04-13T18:20:24.584Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
