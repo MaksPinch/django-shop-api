@@ -8,11 +8,6 @@ RESTful API для продуктового магазина, реализова
 
 ## Структура проекта
 ```
-├── .pytest_cache
-│   ├── v
-│   ├── .gitignore
-│   ├── CACHEDIR.TAG
-│   └── README.md
 ├── cart
 │   ├── migrations
 │   │   ├── 0001_initial.py
@@ -40,6 +35,20 @@ RESTful API для продуктового магазина, реализова
 │   ├── tests.py
 │   ├── urls.py
 │   └── views.py
+├── media
+│   ├── categories
+│   │   ├── products.jpeg
+│   │   └── products_JED1uhv.jpeg
+│   ├── products
+│   │   ├── cottage_cheese.jpg
+│   │   ├── cottage_cheese_JVqv0jh.jpg
+│   │   ├── kefir-1.jpg
+│   │   ├── kefir-1_Yfle4nl.jpg
+│   │   ├── milk.png
+│   │   └── milk_s88LQPq.png
+│   └── subcategories
+│       ├── dairy.jpg
+│       └── dairy_XR4zjUY.jpg
 ├── myshop
 │   ├── __init__.py
 │   ├── asgi.py
@@ -50,8 +59,8 @@ RESTful API для продуктового магазина, реализова
 │   ├── conftest.py
 │   ├── test_cart.py
 │   └── test_catalog.py
-├── .coverage
 ├── .gitignore
+├── README.md
 ├── fixtures.json
 ├── manage.py
 ├── pytest.ini
@@ -97,23 +106,43 @@ pytest --cov=.
 ## Инструкция по запуску
 Для запуска проекта локально выполните следующие шаги:
 
-1. **Установите зависимости**:
+1. **Клонируйте репозиторий**:
+   ```
+   git clone https://github.com/MaksPinch/django-shop-api.git
+   ```
+   ```
+   cd django-shop-api
+   ```
+2. **Настройте виртуальное окружение**:
+   ```
+   python -m venv venv
+   ```
+   Активация (Windows)
+   ```
+   venv\Scripts\activate
+   ```
+   Активация (Mac/Linux)
+   ```
+   source venv/bin/activate
+   ```
+
+3. **Установите зависимости**:
    ```
    pip install -r requirements.txt
    ```
-2. **Примените миграции**:
+4. **Примените миграции**:
    ```
    python manage.py migrate
    ```
-3. **Загрузите демонстрационные данные**:
+5. **Загрузите демонстрационные данные**:
    ```
    python manage.py loaddata fixtures.json
    ```
-4. **Запустите сервер**:
+6. **Запустите сервер**:
    ```
    python manage.py runserver
    ```
-5. **Документация Swagger UI** доступна по адресу: `http://127.0.0.1:8000/api/docs/`
+7. **Документация Swagger UI** доступна по адресу: `http://127.0.0.1:8000/api/docs/`
 
 ---
 **Автор:** Максим Пинчук — MaksPinch (https://github.com/MaksPinch)
