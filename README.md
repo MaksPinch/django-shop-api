@@ -49,6 +49,20 @@ RESTful API для продуктового магазина, реализова
 │   └── subcategories
 │       ├── dairy.jpg
 │       └── dairy_XR4zjUY.jpg
+├── media
+│   ├── categories
+│   │   ├── products.jpeg
+│   │   └── products_JED1uhv.jpeg
+│   ├── products
+│   │   ├── cottage_cheese.jpg
+│   │   ├── cottage_cheese_JVqv0jh.jpg
+│   │   ├── kefir-1.jpg
+│   │   ├── kefir-1_Yfle4nl.jpg
+│   │   ├── milk.png
+│   │   └── milk_s88LQPq.png
+│   └── subcategories
+│       ├── dairy.jpg
+│       └── dairy_XR4zjUY.jpg
 ├── myshop
 │   ├── __init__.py
 │   ├── asgi.py
