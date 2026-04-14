@@ -15,6 +15,3 @@ def func(x):
 
     return "".join(result)
 
-print(func(7))
-print(func(5))
-print(func(10))

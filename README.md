@@ -49,20 +49,6 @@ RESTful API для продуктового магазина, реализова
 │   └── subcategories
 │       ├── dairy.jpg
 │       └── dairy_XR4zjUY.jpg
-├── media
-│   ├── categories
-│   │   ├── products.jpeg
-│   │   └── products_JED1uhv.jpeg
-│   ├── products
-│   │   ├── cottage_cheese.jpg
-│   │   ├── cottage_cheese_JVqv0jh.jpg
-│   │   ├── kefir-1.jpg
-│   │   ├── kefir-1_Yfle4nl.jpg
-│   │   ├── milk.png
-│   │   └── milk_s88LQPq.png
-│   └── subcategories
-│       ├── dairy.jpg
-│       └── dairy_XR4zjUY.jpg
 ├── myshop
 │   ├── __init__.py
 │   ├── asgi.py
@@ -71,8 +57,10 @@ RESTful API для продуктового магазина, реализова
 │   └── wsgi.py
 ├── tests
 │   ├── conftest.py
+│   ├── test_algorithm.py
 │   ├── test_cart.py
 │   └── test_catalog.py
+├── .coveragerc
 ├── .gitignore
 ├── README.md
 ├── algorithm_task.py
@@ -87,7 +75,7 @@ RESTful API для продуктового магазина, реализова
 В соответствии с требованиями (норматив не менее **80%**), проект полностью покрыт автоматизированными тестами.
 - **Инструментарий**: `pytest`, `pytest-django`, `pytest-cov`.
 - **Методология**: Тесты реализованы по паттерну **Arrange-Act-Assert**.
-- **Покрытие (Coverage)**: Достигнут показатель **87%**, что гарантирует стабильность работы ключевых узлов API.
+- **Покрытие (Coverage)**: Достигнут показатель **91%**, что гарантирует стабильность работы ключевых узлов API.
 
 **Запуск тестов:**
 ```

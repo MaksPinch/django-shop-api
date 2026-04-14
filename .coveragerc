@@ -1,0 +1,11 @@
+[run]
+source = .
+omit =
+    manage.py
+    myshop/asgi.py
+    myshop/wsgi.py
+    myshop/settings.py
+    */migrations/*
+    tests/*
+    */tests.py
+    venv/*
