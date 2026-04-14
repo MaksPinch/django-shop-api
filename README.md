@@ -90,21 +90,21 @@ pytest --cov=.
 Ниже приведен список ресурсов, к которым я обращался в процессе разработки для решения специфических задач и настройки архитектуры проекта:
 
 ### Работа с изображениями
-* [Transform Your Django Images with Django-ImageKit](https://pypi.org/project/django-imagekit/) — оптимизация медиа-файлов.
-* [Django-ImageKit Documentation](https://django-imagekit.readthedocs.io/) — официальный справочник по библиотеке.
+* [Transform Your Django Images with Django-ImageKit](https://pypi.org/project/django-imagekit/) - оптимизация медиа-файлов.
+* [Django-ImageKit Documentation](https://django-imagekit.readthedocs.io/) - официальный справочник по библиотеке.
 
 ### Сериализация и DRF
-* [Representing Foreign Key Values](https://www.django-rest-framework.org/api-guide/relations/) — способы представления связей в API.
-* [DRF: FloatField](https://www.django-rest-framework.org/api-guide/fields/#floatfield) — специфика работы с числовыми полями.
+* [Representing Foreign Key Values](https://www.django-rest-framework.org/api-guide/relations/) - способы представления связей в API.
+* [DRF: FloatField](https://www.django-rest-framework.org/api-guide/fields/#floatfield) - специфика работы с числовыми полями.
 
 ### Оптимизация БД
-* [Django: Query Expressions (F() expressions)](https://docs.djangoproject.com/en/stable/ref/models/expressions/) — вычисления на стороне базы данных.
-* [GeeksforGeeks: Aggregate vs Annotate](https://www.geeksforgeeks.org/aggregate-vs-annotate-in-django/) — сравнение методов агрегации данных.
+* [Django: Query Expressions (F() expressions)](https://docs.djangoproject.com/en/stable/ref/models/expressions/) - вычисления на стороне базы данных.
+* [GeeksforGeeks: Aggregate vs Annotate](https://www.geeksforgeeks.org/aggregate-vs-annotate-in-django/) - сравнение методов агрегации данных.
 
 ### Аутентификация и документация
-* [Django: User authentication system](https://docs.djangoproject.com/en/stable/topics/auth/) — документация встроенной системы авторизации.
-* [DRF: TokenAuthentication](https://www.django-rest-framework.org/api-guide/authentication/#tokenauthentication) — использование токенов доступа.
-* [drf-spectacular Documentation](https://drf-spectacular.readthedocs.io/) — генерация схем OpenAPI 3 и Swagger.
+* [Django: User authentication system](https://docs.djangoproject.com/en/stable/topics/auth/) - документация встроенной системы авторизации.
+* [DRF: TokenAuthentication](https://www.django-rest-framework.org/api-guide/authentication/#tokenauthentication) - использование токенов доступа.
+* [drf-spectacular Documentation](https://drf-spectacular.readthedocs.io/) - генерация схем OpenAPI 3 и Swagger.
 
 ## Инструкция по запуску
 Для запуска проекта локально выполните следующие шаги:
