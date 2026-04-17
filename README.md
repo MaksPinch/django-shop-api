@@ -1,7 +1,143 @@
 
 
+**Languages / Языки:**
+* [English Edition](#english-edition)
+* [Русская версия](#русская-версия)
 
 
+---
+<a name="english-edition"></a>
+
+# Grocery Shop API Project
+
+A robust RESTful API for a grocery store built with **Django Rest Framework**. The project features a comprehensive product catalog and shopping cart functionality for authenticated users.
+
+## Project Structure
+```
+├── cart
+│   ├── migrations
+│   ├── models.py
+│   ├── serializers.py
+│   ├── signals.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── catalog
+│   ├── migrations
+│   ├── models.py
+│   ├── serializers.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── media
+│   ├── categories
+│   ├── products
+│   └── subcategories
+├── myshop
+│   ├── settings.py
+│   ├── urls.py
+├── tests
+│   ├── conftest.py
+│   ├── test_algorithm.py
+│   ├── test_cart.py
+│   └── test_catalog.py
+├── .coveragerc
+├── .gitignore
+├── README.md
+├── algorithm_task.py
+├── fixtures.json
+├── manage.py
+├── pytest.ini
+├── requirements.txt
+└── test._api.http
+```
+
+## Testing and Code Quality
+In line with professional standards (minimum 80% requirement), the project is fully covered by automated tests.
+- **Toolkit**: `pytest`, `pytest-django`, `pytest-cov`.
+- **Methodology**: Tests follow the **Arrange-Act-Assert** pattern.
+- **Code Coverage**: Achieved a **91% coverage** rate, ensuring the stability and reliability of the API's core logic.
+
+**Run Tests:**
+```bash
+pytest
+```
+**Check Coverage:**
+```bash
+pytest --cov=.
+```
+
+## Key Resources & Documentation
+The following resources were utilized during development for advanced architecture design and specific task implementations:
+
+### Media Handling
+* [Django-ImageKit](https://pypi.org/project/django-imagekit/) - Media file optimization.
+* [ImageKit Docs](https://django-imagekit.readthedocs.io/) - Official reference for processing images.
+
+### Serialization & Relations
+* [Representing Foreign Key Values](https://www.django-rest-framework.org/api-guide/relations/) - Handling API relationship representations.
+* [DRF: FloatField](https://www.django-rest-framework.org/api-guide/fields/#floatfield) - Specifics of numeric field handling.
+
+### Database Optimization
+* [Django: Query Expressions (F() expressions)](https://docs.djangoproject.com/en/stable/ref/models/expressions/) - Database-side calculations.
+* [Aggregate vs Annotate](https://www.geeksforgeeks.org/aggregate-vs-annotate-in-django/) - Data aggregation and annotation logic.
+
+### Authentication & API Docs
+* [Django Authentication System](https://docs.djangoproject.com/en/stable/topics/auth/) - Core security and user management.
+* [DRF: TokenAuthentication](https://www.django-rest-framework.org/api-guide/authentication/#tokenauthentication) - Secure API access tokens.
+* [drf-spectacular Documentation](https://drf-spectacular.readthedocs.io/) - OpenAPI 3 and Swagger documentation generation.
+
+## Installation & Setup
+To run this project locally, follow these steps:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/MaksPinch/django-shop-api.git
+   cd django-shop-api
+   ```
+
+2. **Setup virtual environment**:
+   ```bash
+   python -m venv venv
+   ```
+   **Activate (Windows):**
+   ```bash
+   venv\Scripts\activate
+   ```
+   **Activate (Mac/Linux):**
+   ```bash
+   source venv/bin/activate
+   ```
+
+3. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Apply migrations**:
+   ```bash
+   python manage.py migrate
+   ```
+
+5. **Load demo data**:
+   ```bash
+   python manage.py loaddata fixtures.json
+   ```
+
+6. **Start the server**:
+   ```bash
+   python manage.py runserver
+   ```
+
+7. **API Documentation**:
+   Swagger UI is available at: `http://127.0.0.1:8000/api/docs/`
+
+---
+**Developer:** Maksim Pinchuk — [MaksPinch](https://github.com/MaksPinch)
+
+---
+
+<a name="русская-версия"></a>
 # Grocery Shop API Project
 
 RESTful API для продуктового магазина, реализованный на Django Rest Framework. Проект включает в себя каталог товаров и функционал корзины для авторизованных пользователей.
